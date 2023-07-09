@@ -19,7 +19,7 @@ public class Inventory : MonoBehaviour
     #endregion
 
     public List<Item> items = new List<Item>();
-    public int maximumSize = 30;
+    public int maximumSize = 20;
 
     public delegate void OnItemChanged();
     public OnItemChanged onItemChangedCallback;
@@ -44,7 +44,7 @@ public class Inventory : MonoBehaviour
     public void RemoveItem(Item item)
     {
         items.Remove(item);
-
+        
         onItemChangedCallback?.Invoke();
     }
 
