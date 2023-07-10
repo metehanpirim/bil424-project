@@ -26,6 +26,7 @@ public class Inventory : MonoBehaviour
 
     public bool AddItem(Item item)
     {
+        Debug.Log("item adding inventory" + item);
         if (!item.isDefaultItem)
         {
             if(items.Count >= maximumSize)
@@ -33,8 +34,9 @@ public class Inventory : MonoBehaviour
                 Debug.Log("Size limit exceeded!");
                 return false;
             }
+            Debug.Log("item adding inventory" + item);
             items.Add(item);
-
+         
             //invoke just when onItemChangedCallback is not null
             onItemChangedCallback?.Invoke();
         }
