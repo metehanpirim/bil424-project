@@ -25,6 +25,12 @@ public class PlayerStats : CharacterStats
 
 
     }
+    public override void Die()
+    {
+        base.Die();
+        //kill
+        PlayerManager.instance.Kill();
+    }
     // Update is called once per frame
     void Update()
     {
