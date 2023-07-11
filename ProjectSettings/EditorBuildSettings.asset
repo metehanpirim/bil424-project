@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Giris.unity
+    guid: 6b980d08e308d464ab5d0acc1e0f8e15
+  - enabled: 1
+    path: Assets/Scenes/KarakterSec.unity
+    guid: 20312b9a4510a8542bc6b45554f1fc93
+  - enabled: 1
+    path: Assets/Scenes/exampleSceneEdited.unity
+    guid: 01c8d7370e6209340aa1dc7bc9c2e247
   m_configObjects: {}
