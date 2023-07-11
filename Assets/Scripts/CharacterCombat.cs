@@ -1,39 +1,63 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 [RequireComponent(typeof(CharacterStats))]
 public class CharacterCombat : MonoBehaviour
 {
-    private CharacterStats myStats;
-    public float attackSpeed = 1.0f;
-    private float attackCooldown = 0f;
-    public float delay = 0.6f;
 
+    public float attackSpeed = 1f;
+    private float attackCooldown = 0f;
+    const float combatCooldown = 5;
+    float lastAttackTime;
+
+    public float attackDelay = 0.6f;
+
+    public bool InCombat { get; private set; }
     public event System.Action OnAttack;
-    
-    private void Start()
+
+    CharacterStats myStats;
+
+    void Start()
     {
         myStats = GetComponent<CharacterStats>();
     }
-    private void Update()
+
+    void Update()
     {
         attackCooldown -= Time.deltaTime;
-    }
-    public void attack(CharacterStats targetStats)
-    {
-        if(attackCooldown <= 0f)
+
+        if (Time.time - lastAttackTime > combatCooldown)
         {
-            StartCoroutine(DoDamage(targetStats, delay));
-            if(OnAttack != null)
-            {
-                OnAttack();
-            }
-            attackCooldown = 1f / attackSpeed;
+            InCombat = false;
         }
     }
+
+    public void Attack(CharacterStats targetStats)
+    {
+        if (attackCooldown <= 0f)
+        {
+            StartCoroutine(DoDamage(targetStats, attackDelay));
+
+            if (OnAttack != null)
+                OnAttack();
+
+            attackCooldown = 1f / attackSpeed;
+            InCombat = true;
+            lastAttackTime = Time.time;
+        }
+
+    }
+
     IEnumerator DoDamage(CharacterStats stats, float delay)
     {
         yield return new WaitForSeconds(delay);
+
         stats.TakeDamage(myStats.damage.getValue());
+        if (stats.curentHealth <= 0)
+        {
+            InCombat = false;
+        }
     }
+
 }

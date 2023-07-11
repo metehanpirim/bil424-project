@@ -17,7 +17,7 @@ public class Enemy : Interactable
         CharacterCombat playercombat = manager.player.GetComponent<CharacterCombat>();
         if (playercombat != null)
         {
-            playercombat.attack(myStats);
+            playercombat.Attack(myStats);
 
         }
     }
