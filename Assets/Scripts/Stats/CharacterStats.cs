@@ -1,40 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+/* Base class that player and enemies can derive from to include stats. */
 
 public class CharacterStats : MonoBehaviour
 {
+
+    // Health
     public int maxHealth = 100;
-    public int curentHealth { get; private set; }
+    public int currentHealth { get; private set; }
+
     public Stat damage;
     public Stat armor;
 
+    public event System.Action<int, int> OnHealthChanged;
+
+    // Set current health to max health
+    // when starting the game.
     void Awake()
     {
-        curentHealth = maxHealth;
+        currentHealth = maxHealth;
     }
-    void Update()
-    {
-        
-    }
-    public void TakeDamage(int damage) {
 
+    // Damage the character
+    public void TakeDamage(int damage)
+    {
+        // Subtract the armor value
         damage -= armor.getValue();
         damage = Mathf.Clamp(damage, 0, int.MaxValue);
 
-        curentHealth -= damage;
-        Debug.Log(transform.name + " takes " + damage);
-        if(curentHealth <= 0)
+        // Damage the character
+        currentHealth -= damage;
+        Debug.Log(transform.name + " takes " + damage + " damage.");
+
+        if (OnHealthChanged != null)
+        {
+            OnHealthChanged(maxHealth, currentHealth);
+        }
+
+        // If health reaches zero
+        if (currentHealth <= 0)
         {
             Die();
         }
-           
     }
 
     public virtual void Die()
     {
-        //Die
-        Debug.Log(transform.name + " diied ");
-
+        // Die in some way
+        // This method is meant to be overwritten
+        Debug.Log(transform.name + " died.");
     }
+
 }
