@@ -32,7 +32,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8601569827373733565}
-  - {fileID: 1048259694570925539}
+  - {fileID: 3332897115333015469}
   - {fileID: 7968264880071279925}
   - {fileID: 8741791940706009615}
   - {fileID: 6484785197747788988}
@@ -386,7 +386,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2daed7758d12b7c488c3a7bd2f970296, type: 3}
---- !u!224 &1048259694570925539 stripped
+--- !u!224 &3332897115333015469 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2363544176833550927, guid: 2daed7758d12b7c488c3a7bd2f970296, type: 3}
   m_PrefabInstance: {fileID: 1048259694570925538}

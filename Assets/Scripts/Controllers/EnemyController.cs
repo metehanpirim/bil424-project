@@ -10,6 +10,8 @@ public class EnemyController : MonoBehaviour
     NavMeshAgent agent;
     CharacterCombat combat;
     public float lookRadius = 10f;
+    public bool behaviour;
+    public bool isStatic;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +23,9 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!isStatic){
         float distance = Vector3.Distance(target.position, transform.position);
-        if(distance <= lookRadius)
+        if(distance <= lookRadius&&behaviour==true)
         {
             agent.SetDestination(target.position);
             if(distance <= agent.stoppingDistance)
@@ -33,6 +36,15 @@ public class EnemyController : MonoBehaviour
                     combat.Attack(targetstats);
                 }
             }
+        }
+        if(distance <=lookRadius&&behaviour==false){
+            Vector3 dirToPlayer=transform.position-target.position;
+            Vector3 newPos=transform.position+dirToPlayer;
+            agent.SetDestination(newPos);
+        }
+        }else{
+            
+            agent.SetDestination(transform.position);
         }
     }
 

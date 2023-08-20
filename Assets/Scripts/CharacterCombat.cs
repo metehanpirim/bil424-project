@@ -46,6 +46,7 @@ public class CharacterCombat : MonoBehaviour
             InCombat = true;
             lastAttackTime = Time.time;
         }
+        
 
     }
 
