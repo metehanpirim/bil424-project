@@ -16,6 +16,23 @@ public class ButtonControllers : MonoBehaviour
     public void selectedPhysicist()
     {
         InfoUI.setPlayer("Physicist");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        LoadSceneByName("Physicist");
+    }
+
+    public void selectedChemist()
+    {
+        InfoUI.setPlayer("Chemist");
+        LoadSceneByName("Chemist");
+    }
+
+    public void selectedBiologist()
+    {
+        InfoUI.setPlayer("Biologist");
+        LoadSceneByName("Biologist");
+    }
+
+    public void LoadSceneByName(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
