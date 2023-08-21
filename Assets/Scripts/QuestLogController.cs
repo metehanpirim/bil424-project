@@ -155,10 +155,13 @@ public class QuestLogController : MonoBehaviour
                    break;
             }
         }
-        if(a == true)
+          
+        if (Input.GetKeyDown(KeyCode.Z))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("End");
         }
+        
+        
 
     }
 }

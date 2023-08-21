@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Pants
   m_EditorClassIdentifier: 
   name: Nex Item
-  icon: {fileID: 0}
+  desc: Item description. A normal simple item. Just item.
+  icon: {fileID: 21300000, guid: 1de9cae4a62c3a944a829ba853729b76, type: 3}
   isDefaultItem: 0
+  requiredItems: []
   equipSlot: 0
   armorModifier: 0
   damageModifier: 0

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   interactionTransform: {fileID: 819656101355364688}
-  item: {fileID: 11400000, guid: 3ecf4f932acf2e8489e1235abb652385, type: 2}
+  item: {fileID: 11400000, guid: 8359c214e2294d3499ca11c8dcc5573a, type: 2}
 --- !u!64 &8190748055331427908
 MeshCollider:
   m_ObjectHideFlags: 0

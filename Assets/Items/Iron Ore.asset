@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Iron Ore
   desc: Item description. A normal simple item. Just item.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 6c3d90e4a0bfcfc46a6c49e8498a313b, type: 3}
   isDefaultItem: 0
   requiredItems: []

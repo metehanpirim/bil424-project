@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Animal Fat
   desc: Can be obtained from animals. Used to craft soap.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 00fcf4dcd982953408c1577d8e2efc86, type: 3}
   isDefaultItem: 0
   requiredItems: []

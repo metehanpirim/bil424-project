@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3
   interactionTransform: {fileID: 6739984195163291968}
-  item: {fileID: 11400000, guid: 3ecf4f932acf2e8489e1235abb652385, type: 2}
+  item: {fileID: 11400000, guid: d0e7189c26743084cae419454590934f, type: 2}
 --- !u!65 &-3045611190990941918
 BoxCollider:
   m_ObjectHideFlags: 0

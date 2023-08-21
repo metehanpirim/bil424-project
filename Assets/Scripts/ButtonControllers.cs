@@ -16,19 +16,19 @@ public class ButtonControllers : MonoBehaviour
     public void selectedPhysicist()
     {
         InfoUI.setPlayer("Physicist");
-        LoadSceneByName("Physicist");
+        LoadSceneByName("GameScene");
     }
 
     public void selectedChemist()
     {
         InfoUI.setPlayer("Chemist");
-        LoadSceneByName("Chemist");
+        LoadSceneByName("GameScene");
     }
 
     public void selectedBiologist()
     {
         InfoUI.setPlayer("Biologist");
-        LoadSceneByName("Biologist");
+        LoadSceneByName("GameScene");
     }
 
     public void LoadSceneByName(string sceneName)

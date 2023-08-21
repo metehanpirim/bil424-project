@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Mushrooms
   desc: Item description. A normal simple item. Just item.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 267262da8ceb9da4486f1b39df472a7a, type: 3}
   isDefaultItem: 0
   requiredItems: []

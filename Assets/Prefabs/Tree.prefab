@@ -206,7 +206,8 @@ MonoBehaviour:
     baseValue: 0
   armor:
     baseValue: 0
-  cubePrefab: {fileID: 7712134317857827232, guid: 43cc5c33a37fa11449243c31e5165932, type: 3}
+  cubePrefab: {fileID: 5633451788806818097, guid: beb6be040dfd8814f9d528df055b3293, type: 3}
+  isSkeleton: 0
 --- !u!114 &6381643089793372169
 MonoBehaviour:
   m_ObjectHideFlags: 0
