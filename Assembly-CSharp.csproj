@@ -95,11 +95,13 @@
     <Compile Include="Assets\Environment\PostProcessing\Runtime\PostProcessingModel.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\Scripts\Item\Equipment.cs" />
+    <Compile Include="Assets\Scripts\CookGeneral.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
     <Compile Include="Assets\Scripts\Item\Item.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Models\VignetteModel.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Components\FxaaComponent.cs" />
     <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
+    <Compile Include="Assets\Scripts\FireplaceSystem.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Components\DitheringComponent.cs" />
     <Compile Include="Assets\Scripts\CharacterAnimator.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\PostProcessingContext.cs" />

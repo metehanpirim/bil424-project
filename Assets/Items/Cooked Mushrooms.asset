@@ -16,4 +16,5 @@ MonoBehaviour:
   desc: Item description. A normal simple item. Just item.
   icon: {fileID: 21300000, guid: 57bcf6e2357a526478599e7db67275f0, type: 3}
   isDefaultItem: 0
-  requiredItems: []
+  requiredItems:
+  - {fileID: 11400000, guid: 3465e35e7108fed479a59e72c0dec026, type: 2}

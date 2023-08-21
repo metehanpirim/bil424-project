@@ -16,4 +16,5 @@ MonoBehaviour:
   desc: Can be obtained by firing wood. Used to craft soap.
   icon: {fileID: 21300000, guid: 552038f36842fb843915c3197aabac07, type: 3}
   isDefaultItem: 0
-  requiredItems: []
+  requiredItems:
+  - {fileID: 11400000, guid: 3ecf4f932acf2e8489e1235abb652385, type: 2}
