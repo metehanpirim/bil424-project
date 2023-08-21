@@ -74,6 +74,7 @@
     <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\Scripts\InfoUI.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Components\GrainComponent.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Models\BloomModel.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
@@ -120,6 +121,7 @@
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
     <Compile Include="Assets\Scripts\CraftGeneral.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\Scripts\QuestLogController.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
     <Compile Include="Assets\Scripts\CraftingSystem.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
@@ -127,6 +129,7 @@
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
     <Compile Include="Assets\Scripts\ButtonControllers.cs" />
     <Compile Include="Assets\Scripts\CraftingSlot.cs" />
+    <Compile Include="Assets\Scripts\QuestLogSlot.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Models\DitheringModel.cs" />
     <Compile Include="Assets\Scripts\Stats\Stat.cs" />
     <Compile Include="Assets\Scripts\Controllers\EnemyController.cs" />
@@ -135,6 +138,7 @@
     <Compile Include="Assets\Scripts\InventoryUI.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Models\UserLutModel.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />

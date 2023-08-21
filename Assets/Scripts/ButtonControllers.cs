@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonControllers : MonoBehaviour
 {
-
     public void startPressed()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
@@ -16,6 +15,7 @@ public class ButtonControllers : MonoBehaviour
     }
     public void selectedPhysicist()
     {
+        InfoUI.setPlayer("Physicist");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
