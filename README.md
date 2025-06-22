@@ -40,7 +40,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/metehanpirim/bil424-project.git
+   git clone https://github.com/metehanpirim/discover-it-rpg.git
 
 2. Open the project with Unity Hub
 
